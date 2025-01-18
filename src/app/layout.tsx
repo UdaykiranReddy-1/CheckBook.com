@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
-import { Poppins,Montserrat,Roboto,Inter,Lato,Ubuntu } from "next/font/google";
+import { Poppins,Montserrat,Roboto,Inter,Ubuntu,Lato } from "next/font/google";
 import "./globals.css";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 // const poppins = Poppins({
 //   subsets: ["latin"],
@@ -27,10 +17,10 @@ import "./globals.css";
 //   weight: ["300","400","500"],
 // })
 
-export const ubu = Ubuntu({
-  subsets: ["latin"],
-  weight: ["300","400","700"],
-})
+// const ubu = Ubuntu({
+//   subsets: ["latin"],
+//   weight: ["300","400","700"],
+// })
 
 const lato = Lato({
   subsets: ["latin"],
