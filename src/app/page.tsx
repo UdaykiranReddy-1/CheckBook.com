@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import { Caveat, Satisfy } from "next/font/google";
 
-const dan = Caveat({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-})
+// const cav = Caveat({
+//   subsets: ["latin"],
+//   weight: ["400", "700"],
+// })
 
 const sat = Satisfy({
   subsets: ["latin"],
@@ -79,7 +79,13 @@ const CommuteApp: React.FC = () => {
     <div className="flex flex-col lg:min-h-screen min-h-[calc(100vh-56px)]  bg-blue-50">
       {/* Header */}
       <header className="bg-blue-600 text-white p-4 shadow-md text-center text-xl font-bold">
+        {/* <div className="flex justify-between space-x-1 items-center"> */}
+          {/* <img src="/taxi.png" alt="" className="w-12 h-12 scale-x-[-1]" /> */}
+          {/* <span>CheckBook.com</span>
+          <img src="/cab.png" alt="" className="w-12 h-12" />
+        </div> */}
         CheckBook.com
+        
       </header>
 
       {/* Main Section */}
