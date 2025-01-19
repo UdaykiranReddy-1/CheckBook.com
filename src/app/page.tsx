@@ -50,9 +50,10 @@ const CommuteApp: React.FC = () => {
       month: "2-digit",
       day: "2-digit",
     });
-    const formattedTime = date.toLocaleTimeString([], {
+    const formattedTime = date.toLocaleTimeString("en-US", { // Force 12-hour format with AM/PM
       hour: "2-digit",
       minute: "2-digit",
+      hour12: true, // Explicitly enable 12-hour format
     });
 
     return `${formattedDate} at ${formattedTime}`;
@@ -174,7 +175,7 @@ const CommuteApp: React.FC = () => {
                 if (timeDiff > 0) {
                   return (
                     <div className="mt-4 p-4 bg-green-100 rounded text-green-800">
-                      🎉Yayy.. Still {Math.ceil(timeDiff)} hours left😃!
+                      🎉Yayy.. Still {timeDiff.toFixed(1)} hours left😃!
                     </div>
                   );
                 } else {
